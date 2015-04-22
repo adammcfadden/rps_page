@@ -20,4 +20,7 @@ describe("String#beats") do
   it("returns true if scissors is the object and rock is the argument") do
     expect("scissors".beats?("rock")).to(eq(false))
   end
+  it("returns nil if scissors is the object and scissors is the argument") do
+    expect("scissors".beats?("scissors")).to(eq(nil))
+  end
 end
